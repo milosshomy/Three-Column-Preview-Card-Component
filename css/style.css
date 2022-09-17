@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+hr,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+:root {
+  --bright-orange-clr: hsl(31, 77%, 52%);
+  --dark-cyan-clr: hsl(184, 100%, 22%);
+  --very-dark-cyan-clr: hsl(179, 100%, 13%);
+  --transparent-white-clr: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray-clr: hsl(0, 0%, 95%);
+  --fs: 15px;
+  --text-ff: "Lexend Deca", sans-serif;
+  --heading-ff: "Big Shoulders Display", cursive;
+}
+
+body {
+  background-color: var(--very-light-gray-clr);
+  font-size: var(--fs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0px 20px;
+}
+
+.col-12 {
+  padding: 0;
+}
+
+.bg-orange {
+  background-color: var(--bright-orange-clr);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bg-cyan {
+  background-color: var(--dark-cyan-clr);
+}
+
+.bg-dark-cyan {
+  background-color: var(--very-dark-cyan-clr);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.content-wrapper {
+  padding: 50px;
+}
+
+.content-wrapper img {
+  margin-bottom: 30px;
+}
+
+.name {
+  color: var(--very-light-gray-clr);
+  font-family: var(--heading-ff);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.text {
+  color: var(--transparent-white-clr);
+  font-family: var(--text-ff);
+  margin-bottom: 80px;
+}
+
+.primary-btn {
+  font-family: var(--text-ff);
+  border-radius: 100vh;
+  background-color: var(--very-light-gray-clr);
+  padding: 15px 40px;
+  transition: 200ms ease-in;
+}
+
+.orange {
+  color: var(--bright-orange-clr);
+}
+
+.cyan {
+  color: var(--dark-cyan-clr);
+}
+
+.dark-cyan {
+  color: var(--very-dark-cyan-clr);
+}
+
+.primary-btn:hover {
+  background: none;
+  border: 2px solid var(--very-light-gray-clr);
+  color: var(--very-light-gray-clr);
+}
+
+/* Media Queries */
+
+@media all and (max-width: 768px) {
+  main {
+    padding: 100px 0px;
+  }
+
+  .bg-orange {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .bg-dark-cyan {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .text {
+    margin-bottom: 30px;
+  }
+}
